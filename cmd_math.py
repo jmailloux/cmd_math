@@ -9,7 +9,7 @@ def get_ans(num1:int, num2:int) -> int:
     try:
       ans = int(input(f'What is {num1} * {num2}? ' ))
     except ValueError:
-       print("Please enter a number!")
+      print("Please enter a number!")
   return ans
 
 def main():
