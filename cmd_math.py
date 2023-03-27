@@ -13,7 +13,7 @@ def get_ans(num1:int, num2:int) -> int:
   return ans
 
 def main():
-  start = time()
+
   total = 0
   correct = 0
   duration = 0
@@ -23,8 +23,12 @@ def main():
     num2 = random.randint(0, 10)
     user_ans = get_ans(num1, num2)
     total += 1
+    if total == 1:
+      start = time()
     if(user_ans == num1 * num2):
         correct += 1
+    else:
+       print('Wrong!!!!!\n')
     percent = correct * 100 / total
     now = time()
     duration = (now-start)/60
